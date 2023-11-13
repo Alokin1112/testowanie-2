@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+}
+
+.amount__input {
+  width: 50px;
+  padding: 4px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+}

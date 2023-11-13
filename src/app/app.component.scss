@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.icon {
+  color: white;
+}
+
+.cart__button {
+  position: relative;
+}
+
+.items__count {
+  position: absolute;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin: 0;
+  padding-top: 1px;
+  color: white;
+  background-color: red;
+  top: 8px;
+  right: 8px;
+}

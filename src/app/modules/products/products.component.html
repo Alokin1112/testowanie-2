@@ -1,0 +1,16 @@
+@if(products$ | async; as products){
+<div class="wrapper">
+  @for (product of products?.content; track product?.id) {
+  <ds-products-item
+    [dsProduct]="product"
+    (dsAddItemToBasket)="addItemToBasket($event)"
+  />
+  }@empty {
+  <p>No Data</p>
+  }
+</div>
+}@else {
+<div class="centered">
+  <mat-spinner />
+</div>
+}

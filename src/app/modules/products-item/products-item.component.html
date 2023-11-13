@@ -1,0 +1,29 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{ product?.name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="price">
+      {{ product.price | price }} zł
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <span class="actions">
+      <input
+        type="number"
+        class="amount__input"
+        [formControl]="amountInput"
+      />
+      <button
+        mat-stroked-button
+        [disabled]="amountInput.invalid"
+        (click)="addItem()"
+      >
+        <mat-icon>
+          shopping_cart
+        </mat-icon>
+        Dodaj do koszyka
+      </button>
+    </span>
+  </mat-card-actions>
+</mat-card>
