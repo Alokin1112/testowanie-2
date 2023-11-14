@@ -1,0 +1,26 @@
+<button
+  mat-raised-button
+  color="primary"
+>
+  <span class="buy__button">
+    <mat-icon>
+      shopping_basket
+    </mat-icon>
+
+    Zapłać {{ sum$ | async |price }} zł
+
+  </span>
+</button>
+
+
+@if(basketItems$ | async; as basketItems){
+@for (basketItem of basketItems; track $index) {
+<ds-cart-item [dsBasketItem]="basketItem" />
+}@empty {
+<p>No Data</p>
+}
+}@else {
+<div class="centered">
+  <mat-spinner />
+</div>
+}

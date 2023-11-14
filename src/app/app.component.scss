@@ -7,15 +7,6 @@
   height: 100%;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 16px;
-}
 
 .example-spacer {
   flex: 1 1 auto;
@@ -25,12 +16,24 @@
   color: white;
 }
 
+
 .cart__button {
   position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-decoration: none;
 }
 
 .items__count {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   font-size: 12px;
   width: 15px;
@@ -38,8 +41,18 @@
   padding: 0;
   margin: 0;
   padding-top: 1px;
+  padding-left: 1px;
   color: white;
   background-color: red;
   top: 8px;
   right: 8px;
+}
+
+.header {
+  max-height: 48px;
+}
+
+.title {
+  text-decoration: none;
+  color: white;
 }

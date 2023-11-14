@@ -85,6 +85,22 @@
         "hash": "4689145951703824387"
       },
       {
+        "file": ".nx/cache/file-map.json",
+        "hash": "15241814973458762827"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "9939768930852640538"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "2521094404165247131"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "16368612044371134971"
+      },
+      {
         "file": ".vscode/extensions.json",
         "hash": "11934160580685414355"
       },
@@ -122,11 +138,11 @@
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "5171816876129268568"
+        "hash": "13354396623655453082"
       },
       {
         "file": "src/app/app.component.scss",
-        "hash": "3244421341483603138"
+        "hash": "4875815197324876743"
       },
       {
         "file": "src/app/app.component.spec.ts",
@@ -134,11 +150,71 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "10800643300503607082"
+        "hash": "15103235313680968208"
       },
       {
         "file": "src/app/app.routing.ts",
         "hash": "9800500706222646392"
+      },
+      {
+        "file": "src/app/core/constants/api.const.ts",
+        "hash": "5418015054285885968"
+      },
+      {
+        "file": "src/app/core/interfaces/basket.interface.ts",
+        "hash": "1322249443069057050"
+      },
+      {
+        "file": "src/app/core/interfaces/order.inteface.ts",
+        "hash": "12871172858095688298"
+      },
+      {
+        "file": "src/app/core/interfaces/page.inteface.ts",
+        "hash": "4311528067370965429"
+      },
+      {
+        "file": "src/app/core/interfaces/product.inteface.ts",
+        "hash": "7193632367795680800"
+      },
+      {
+        "file": "src/app/core/mocks/products.mock.ts",
+        "hash": "9801484090905739803"
+      },
+      {
+        "file": "src/app/core/services/basket.service.ts",
+        "hash": "4259258588012579462"
+      },
+      {
+        "file": "src/app/core/services/products.service.ts",
+        "hash": "5780147495156768387"
+      },
+      {
+        "file": "src/app/modules/products/products.component.html",
+        "hash": "11741503854505484548"
+      },
+      {
+        "file": "src/app/modules/products/products.component.scss",
+        "hash": "14529298057494763125"
+      },
+      {
+        "file": "src/app/modules/products/products.component.ts",
+        "hash": "9283344921587711774"
+      },
+      {
+        "file": "src/app/modules/products-item/products-item.component.html",
+        "hash": "16132002210927019059"
+      },
+      {
+        "file": "src/app/modules/products-item/products-item.component.scss",
+        "hash": "17627063946488192786"
+      },
+      {
+        "file": "src/app/modules/products-item/products-item.component.ts",
+        "hash": "6900368000944104116"
+      },
+      {
+        "file": "src/app/shared/pipes/price.pipe.ts",
+        "hash": "16535703725017655806"
       },
       {
         "file": "src/assets/.gitkeep",
@@ -182,7 +258,7 @@
       },
       {
         "file": "src/environments/environment.ts",
-        "hash": "15555888611026417538"
+        "hash": "12582172649215780762"
       },
       {
         "file": "src/favicon.ico",
@@ -194,7 +270,7 @@
       },
       {
         "file": "src/main.ts",
-        "hash": "3191557569348957630"
+        "hash": "386444481097164373"
       },
       {
         "file": "src/manifest.webmanifest",
@@ -222,7 +298,7 @@
       },
       {
         "file": "tsconfig.json",
-        "hash": "348692903078268777"
+        "hash": "518639541025454545"
       },
       {
         "file": "tsconfig.spec.json",

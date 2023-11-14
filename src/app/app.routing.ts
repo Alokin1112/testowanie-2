@@ -1,14 +1,16 @@
 import { Routes } from "@angular/router";
 import { AppComponent } from "@app/app.component";
+import { CartPageComponent } from "@pages/cart-page/cart-page.component";
+import { HomePageComponent } from "@pages/home-page/home-page.component";
 
 export default [
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    component: HomePageComponent,
   },
   {
-    path: 'home',
-    component: AppComponent,
+    path: 'cart',
+    component: CartPageComponent
   }
+
 ] as Routes;

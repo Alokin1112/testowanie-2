@@ -1,23 +1,27 @@
-<mat-toolbar color="primary">
-  <span>My App - testowanie</span>
+<mat-toolbar
+  color="primary"
+  class="header"
+>
+  <a
+    class="title"
+    routerLink="/"
+  >My App - testowanie</a>
   <span class="example-spacer"></span>
-  <button
-    mat-icon-button
+  @if (basketItems$ | async; as basketItems) {
+  <a
     class="cart__button"
+    routerLink="/cart"
   >
 
-    @if (itemsLength$ | async; as length) {
-    @if (length>0) {
-    <span class="items__count">
-      {{ length }}
-    </span>
-    }
+    @if (basketItems?.length>0) {
+    <div class="items__count">
+      {{ basketItems?.length }}
+    </div>
     }
 
     <mat-icon class="icon">shopping_cart</mat-icon>
-  </button>
+  </a>
+  }
 </mat-toolbar>
 
-<div class="wrapper">
-  <ds-products />
-</div>
+<router-outlet />
