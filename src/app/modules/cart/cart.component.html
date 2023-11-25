@@ -7,7 +7,7 @@
       shopping_basket
     </mat-icon>
 
-    Zapłać {{ sum$ | async |price }} zł
+    Utwórz zamówienie {{ sum$ | async |price }} zł
 
   </span>
 </button>
@@ -16,6 +16,7 @@
 @if(basketItems$ | async; as basketItems){
 @for (basketItem of basketItems; track $index) {
 <ds-cart-item [dsBasketItem]="basketItem" />
+
 }@empty {
 <p>No Data</p>
 }

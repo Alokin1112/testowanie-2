@@ -7,15 +7,15 @@
     routerLink="/"
   >My App - testowanie</a>
   <span class="example-spacer"></span>
-  @if (basketItems$ | async; as basketItems) {
+  @if ({amount:basketItemsAmount$ | async}; as props) {
   <a
     class="cart__button"
     routerLink="/cart"
   >
 
-    @if (basketItems?.length>0) {
+    @if (props.amount) {
     <div class="items__count">
-      {{ basketItems?.length }}
+      {{ props.amount }}
     </div>
     }
 

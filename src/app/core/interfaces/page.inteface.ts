@@ -26,3 +26,8 @@ export interface Page<T> {
   first: boolean;
   empty: boolean;
 }
+
+export interface Pagination {
+  page: number,
+  size: number,
+}

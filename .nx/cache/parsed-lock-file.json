@@ -3708,6 +3708,15 @@
         "hash": "sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA=="
       }
     },
+    "npm:@types/lodash": {
+      "type": "npm",
+      "name": "npm:@types/lodash",
+      "data": {
+        "version": "4.14.201",
+        "packageName": "@types/lodash",
+        "hash": "sha512-y9euML0cim1JrykNxADLfaG0FgD1g/yTHwUs/Jg9ZIU7WKj2/4IW9Lbb1WZbvck78W/lfGXFfe+u2EGfIJXdLQ=="
+      }
+    },
     "npm:@types/mime": {
       "type": "npm",
       "name": "npm:@types/mime",

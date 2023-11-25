@@ -8,6 +8,12 @@
   }@empty {
   <p>No Data</p>
   }
+  <ds-pagination
+    [pagination]="pagination$ | async"
+    [maxPageCount]="products?.totalPages"
+    (nextPage)="nextPage()"
+    (previousPage)="previousPage()"
+  />
 </div>
 }@else {
 <div class="centered">
