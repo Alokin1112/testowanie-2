@@ -1,0 +1,23 @@
+@if(products$ | async; as products){
+<div class="wrapper">
+  @for (product of products?.content; track product?.id) {
+  <ds-product-admin-item
+    [dsProduct]="product"
+    (dsDelete)="deleteItem(product)"
+    (dsEdit)="editItem(product)"
+  />
+  }@empty {
+  <p>No Data</p>
+  }
+  <ds-pagination
+    [pagination]="pagination$ | async"
+    [maxPageCount]="products?.totalPages"
+    (nextPage)="nextPage()"
+    (previousPage)="previousPage()"
+  />
+</div>
+}@else {
+<div class="centered">
+  <mat-spinner />
+</div>
+}

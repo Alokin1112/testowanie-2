@@ -1,0 +1,41 @@
+<form
+  [formGroup]="form"
+  (ngSubmit)="submit()"
+  class="form"
+>
+  <mat-form-field appearance="outline">
+    <mat-label>Nazwa</mat-label>
+    <input
+      matInput
+      formControlName="name"
+    />
+    <mat-error *ngIf="form.get('name').hasError('required')">Nazwa jest wymagana</mat-error>
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Liczba na magazynie</mat-label>
+    <input
+      matInput
+      formControlName="stockQuantity"
+      type="number"
+    />
+    <mat-error *ngIf="form.get('stockQuantity').hasError('required')">Liczba na magazynie jest wymagana</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Cena</mat-label>
+    <input
+      matInput
+      formControlName="price"
+      type="number"
+    />
+    <mat-error *ngIf="form.get('price').hasError('required')">Cena jest wymagana</mat-error>
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    [disabled]="form.invalid"
+  >Zatwierdź</button>
+</form>

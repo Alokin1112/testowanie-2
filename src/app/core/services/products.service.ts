@@ -39,7 +39,6 @@ export class ProductsService {
     return this.http.put(`${environment.httpBackend}${API.PRODUCTS}`, product);
   }
 
-
   delete(id: number): Observable<unknown> {
     return this.http.delete<Product>(`${environment.httpBackend}${API.PRODUCTS_ID.replace(":id", (id || 0).toString())}`);
   }
