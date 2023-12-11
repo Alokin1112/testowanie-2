@@ -11,12 +11,15 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { NoopScrollStrategy } from '@angular/cdk/overlay';
 import { ProductFormComponent } from '@modules/product-form/product-form.component';
+import { RouterModule } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'ds-admin-page',
   standalone: true,
   imports: [
     CommonModule, MatProgressSpinnerModule, PaginationComponent,
-    ProductAdminItemComponent, MatSnackBarModule, MatDialogModule
+    ProductAdminItemComponent, MatSnackBarModule, MatDialogModule, RouterModule, MatButtonModule, MatIconModule
   ],
   templateUrl: './admin-page.component.html',
   styleUrl: './admin-page.component.scss',

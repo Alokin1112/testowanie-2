@@ -1,0 +1,15 @@
+<ng-container *ngIf="product$ | async as product;else loading">
+  <h2 class="title">Edytuj produkt</h2>
+
+  <ds-product-form
+    [isSubmitting]="isSubmitting"
+    [dsProduct]="product"
+    (dsSubmitedValue)="handleSubmit($event,product.id)"
+  />
+</ng-container>
+
+<ng-template #loading>
+  <div class="centered">
+    <mat-spinner />
+  </div>
+</ng-template>

@@ -1,17 +1,18 @@
-.wrapper {
+:host {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 450px;
+  min-width: 500px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .centered {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.addLink {
   width: 100%;
-  margin: 15px auto;
 }

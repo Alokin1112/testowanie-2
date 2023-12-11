@@ -1,10 +1,20 @@
+<a
+  mat-stroked-button
+  class="addLink"
+  routerLink="/admin/addProduct"
+>
+  <mat-icon>
+    add
+  </mat-icon>
+  Dodaj nowy produkt
+</a>
+
 @if(products$ | async; as products){
 <div class="wrapper">
   @for (product of products?.content; track product?.id) {
   <ds-product-admin-item
     [dsProduct]="product"
     (dsDelete)="deleteItem(product)"
-    (dsEdit)="editItem(product)"
   />
   }@empty {
   <p>No Data</p>

@@ -7,6 +7,7 @@
     <mat-label>Nazwa</mat-label>
     <input
       matInput
+      id="name-input"
       formControlName="name"
     />
     <mat-error *ngIf="form.get('name').hasError('required')">Nazwa jest wymagana</mat-error>
@@ -17,6 +18,9 @@
     <mat-label>Liczba na magazynie</mat-label>
     <input
       matInput
+      id="stockQuantity-input"
+      min="1"
+      max="1000"
       formControlName="stockQuantity"
       type="number"
     />
@@ -27,6 +31,7 @@
     <mat-label>Cena</mat-label>
     <input
       matInput
+      id="price-input"
       formControlName="price"
       type="number"
     />
@@ -36,6 +41,13 @@
   <button
     mat-raised-button
     color="primary"
-    [disabled]="form.invalid"
-  >Zatwierdź</button>
+    id="form-submit-button"
+    [disabled]="form.invalid || (isSameAsInitial$ | async) || isSubmitting"
+  >
+    <!-- <mat-spinner
+      *ngIf="isSubmitting"
+      class="spinner"
+    /> -->
+    Zatwierdź
+  </button>
 </form>

@@ -12,15 +12,15 @@
   </mat-card-content>
   <mat-card-actions align="end">
     <span class="actions">
-      <button
+      <a
         mat-stroked-button
-        (click)="dsEdit.emit()"
+        [routerLink]="'/admin/editProduct/' + dsProduct?.id"
       >
         <mat-icon>
           edit
         </mat-icon>
         Edytuj
-      </button>
+      </a>
 
       <button
         mat-stroked-button

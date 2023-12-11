@@ -3843,6 +3843,15 @@
         "hash": "sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA=="
       }
     },
+    "npm:@types/uuid": {
+      "type": "npm",
+      "name": "npm:@types/uuid",
+      "data": {
+        "version": "9.0.7",
+        "packageName": "@types/uuid",
+        "hash": "sha512-WUtIVRUZ9i5dYXefDEAI7sh9/O7jGvHg7Df/5O/gtH3Yabe5odI3UWopVR1qbPXQtvOxWu3mM4XxlYeZtMWF4g=="
+      }
+    },
     "npm:@types/ws": {
       "type": "npm",
       "name": "npm:@types/ws",
@@ -10305,6 +10314,24 @@
         "hash": "sha512-GJgLTZ7vYb/JtPSSZ10hsOYIvEYsjbNU+zPdIHcUaWVNUEPivzxku31865sSSud0Da0W4lEeOPlmw93zLQchuQ=="
       }
     },
+    "npm:uuid@8.3.2": {
+      "type": "npm",
+      "name": "npm:uuid@8.3.2",
+      "data": {
+        "version": "8.3.2",
+        "packageName": "uuid",
+        "hash": "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
+      }
+    },
+    "npm:uuid": {
+      "type": "npm",
+      "name": "npm:uuid",
+      "data": {
+        "version": "9.0.1",
+        "packageName": "uuid",
+        "hash": "sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA=="
+      }
+    },
     "npm:socks": {
       "type": "npm",
       "name": "npm:socks",
@@ -10924,15 +10951,6 @@
         "version": "1.0.1",
         "packageName": "utils-merge",
         "hash": "sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA=="
-      }
-    },
-    "npm:uuid": {
-      "type": "npm",
-      "name": "npm:uuid",
-      "data": {
-        "version": "8.3.2",
-        "packageName": "uuid",
-        "hash": "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
       }
     },
     "npm:v8-compile-cache": {
@@ -26389,7 +26407,7 @@
     },
     {
       "source": "npm:sockjs",
-      "target": "npm:uuid",
+      "target": "npm:uuid@8.3.2",
       "type": "static"
     },
     {
