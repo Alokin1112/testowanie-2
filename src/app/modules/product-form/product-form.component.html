@@ -10,7 +10,10 @@
       id="name-input"
       formControlName="name"
     />
-    <mat-error *ngIf="form.get('name').hasError('required')">Nazwa jest wymagana</mat-error>
+    <mat-error *ngIf="form.get('name').hasError('required')">
+      Nazwa jest wymagana
+    </mat-error>
+    <mat-error *ngIf="form.get('name').hasError('minlenght')">Nazwa musi mie minimum 5 znaków</mat-error>
   </mat-form-field>
 
 
