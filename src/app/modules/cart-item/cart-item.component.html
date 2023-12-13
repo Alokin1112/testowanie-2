@@ -1,28 +1,30 @@
 <mat-card class="card">
-  <mat-card-header>
-    <mat-card-title>{{ basketItem?.product?.name }}</mat-card-title>
+  <mat-card-header class="header">
+    <mat-card-title>{{ dsBasketItem?.product?.name }}</mat-card-title>
+    <button
+      mat-icon-button
+      (click)="dsDeleteItem.emit(null)"
+    >
+      <mat-icon>
+        close
+      </mat-icon>
+    </button>
   </mat-card-header>
   <mat-card-actions align="end">
 
     <div class="price">
-      {{ basketItem?.product.price | price }} zł
+      {{ dsBasketItem?.product.price | price }} zł
     </div>
 
     <span class="multiplication">
       X
     </span>
 
-    <span class="actions">
-      <input
-        min="1"
-        [max]="basketItem?.product?.stockQuantity"
-        type="number"
-        class="amount__input"
-        [formControl]="amountInput"
-      />
+    <span class="price">
+      {{ dsBasketItem.quantity }}
     </span>
 
     =
-    {{ (amountInput?.value*basketItem?.product.price) | price }} zł
+    {{ (dsBasketItem?.quantity*dsBasketItem?.product.price) | price }} zł
   </mat-card-actions>
 </mat-card>

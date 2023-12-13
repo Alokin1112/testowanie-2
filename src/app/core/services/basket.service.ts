@@ -18,4 +18,10 @@ export class BasketService {
     ]);
   }
 
+  removeItem(itemId: number): void {
+    this.basket$.next([
+      ...this.basket$.getValue().filter((item) => item?.product?.id !== itemId)
+    ]);
+  }
+
 }

@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { BasketService } from '@core/services/basket.service';
 import { CartItemComponent } from '@modules/cart-item/cart-item.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { Observable, map } from 'rxjs';
+import { Observable, map, take } from 'rxjs';
 import { BasketItem } from '@core/interfaces/basket.interface';
 import { isEqual, uniqBy } from 'lodash';
 import { MatButtonModule } from '@angular/material/button';
 import { PricePipe } from '@shared/pipes/price.pipe';
 import { MatIconModule } from '@angular/material/icon';
+import { OrdersService } from '@core/services/orders.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'ds-cart',
@@ -24,6 +26,8 @@ export class CartComponent implements OnInit {
   sum$: Observable<number>;
 
   private basketService = inject(BasketService);
+  private orderService = inject(OrdersService);
+  private router = inject(Router);
 
   ngOnInit(): void {
     this.basketItems$ = this.basketService.get().pipe(
@@ -40,5 +44,17 @@ export class CartComponent implements OnInit {
     this.sum$ = this.basketService.get().pipe(
       map((res) => res?.map((item) => item?.product?.price * item?.quantity)?.reduce((a, b) => a + b, 0)),
     );
+  }
+
+  addOrder(basket: BasketItem[]): void {
+    this.orderService.createNewOrder(basket.map((item) => ({ id: item?.product?.id, quantity: item?.quantity }))).pipe(
+      take(1)
+    ).subscribe((res) => {
+      void this.router.navigateByUrl("/");
+    });
+  }
+
+  deleteItem(id: number): void {
+    this.basketService.removeItem(id);
   }
 }

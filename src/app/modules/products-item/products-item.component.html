@@ -12,11 +12,12 @@
       <input
         type="number"
         class="amount__input"
+        min="1"
         [formControl]="amountInput"
       />
       <button
         mat-stroked-button
-        [disabled]="amountInput.invalid"
+        [disabled]="amountInput.invalid || (amountInput?.value + (itemCountInBasket$ | async))>product.stockQuantity"
         (click)="addItem()"
       >
         <mat-icon>

@@ -4,13 +4,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { BasketItem } from '@core/interfaces/basket.interface';
 import { BasketService } from '@core/services/basket.service';
-import { OrdersService } from '@core/services/orders.service';
-import { UsersService } from '@core/services/users.service';
 import { ProductsComponent } from '@modules/products/products.component';
 import { Observable, map } from 'rxjs';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'ds-root',
@@ -24,13 +20,6 @@ export class AppComponent implements OnInit {
   basketItemsAmount$: Observable<number>;
 
   private basketService = inject(BasketService);
-  private orderService = inject(OrdersService);
-
-  constructor() {
-    this.orderService.createNewOrder().pipe(
-      takeUntilDestroyed()
-    ).subscribe();
-  }
 
   ngOnInit(): void {
     this.basketItemsAmount$ = this.basketService.get().pipe(

@@ -1,6 +1,9 @@
+@if(basketItems$ | async; as basketItems){
+
 <button
   mat-raised-button
   color="primary"
+  (click)="addOrder(basketItems)"
 >
   <span class="buy__button">
     <mat-icon>
@@ -12,10 +15,11 @@
   </span>
 </button>
 
-
-@if(basketItems$ | async; as basketItems){
 @for (basketItem of basketItems; track $index) {
-<ds-cart-item [dsBasketItem]="basketItem" />
+<ds-cart-item
+  [dsBasketItem]="basketItem"
+  (dsDeleteItem)="deleteItem(basketItem?.product?.id)"
+/>
 
 }@empty {
 <p>No Data</p>

@@ -19,12 +19,6 @@ import { Product } from '@core/interfaces/product.inteface';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CartItemComponent {
-  @Input({ required: true }) set dsBasketItem(val: BasketItem) {
-    this.basketItem = val;
-    this.amountInput = new FormControl<number>(val?.quantity, [Validators.required, Validators.min(1), Validators.max(val?.product?.stockQuantity)]);
-  }
-
-  basketItem: BasketItem;
-  amountInput: FormControl<number>;
-
+  @Input() dsBasketItem: BasketItem;
+  @Output() dsDeleteItem = new EventEmitter<void>();
 }
