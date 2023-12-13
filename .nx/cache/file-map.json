@@ -32,6 +32,7 @@
     "@types/uuid": "^9.0.7",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
+    "cypress": "^13.6.1",
     "eslint": "^8.49.0",
     "jest": "^29.7.0",
     "jest-preset-angular": "^13.1.3",
@@ -74,23 +75,23 @@
     "nonProjectFiles": [
       {
         "file": ".editorconfig",
-        "hash": "6686520031028425313"
+        "hash": "17241496168097493888"
       },
       {
         "file": ".eslintignore",
-        "hash": "4660178089321434051"
+        "hash": "220621842247230524"
       },
       {
         "file": ".eslintrc.json",
-        "hash": "9482042734334966516"
+        "hash": "3882268627474231753"
       },
       {
         "file": ".gitignore",
-        "hash": "13044518069027839699"
+        "hash": "4689145951703824387"
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "4059185431756933479"
+        "hash": "8486006186182370896"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -98,91 +99,91 @@
       },
       {
         "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "1240069855620025875"
+        "hash": "16853618532397992087"
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "344257218045992468"
+        "hash": "15195054426900464165"
       },
       {
         "file": ".vscode/extensions.json",
-        "hash": "5331566439708925252"
+        "hash": "11934160580685414355"
       },
       {
         "file": ".vscode/launch.json",
-        "hash": "17038929134016848735"
+        "hash": "17406702432687230417"
       },
       {
         "file": ".vscode/settings.json",
-        "hash": "13736123602114879340"
+        "hash": "10054247643940201619"
       },
       {
         "file": ".vscode/tasks.json",
-        "hash": "5336636969995539451"
+        "hash": "10093397977228577162"
       },
       {
         "file": "README.md",
-        "hash": "5553569322147916581"
+        "hash": "6356814664155334547"
       },
       {
         "file": "angular.json",
-        "hash": "16664959611953830741"
+        "hash": "13436080871257951880"
       },
       {
         "file": "jest.config.ts",
-        "hash": "3841830815030212900"
+        "hash": "4271373349861349343"
       },
       {
         "file": "ngsw-config.json",
-        "hash": "12579492061924086660"
+        "hash": "17103502601035726840"
       },
       {
         "file": "package-lock.json",
-        "hash": "4563489308803312620"
+        "hash": "8985061709006440537"
       },
       {
         "file": "package.json",
-        "hash": "10403388354231320856"
+        "hash": "1914823324341344057"
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "757878010126605563"
+        "hash": "18247036500764521115"
       },
       {
         "file": "src/app/app.component.scss",
-        "hash": "17327142113242265432"
+        "hash": "17610046755516762648"
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "2603827396306302317"
+        "hash": "16156984543192187031"
       },
       {
         "file": "src/app/app.routing.ts",
-        "hash": "3800867176903937896"
+        "hash": "9326463430416392260"
       },
       {
         "file": "src/app/core/constants/api.const.ts",
-        "hash": "8250858850600452490"
+        "hash": "5418015054285885968"
       },
       {
         "file": "src/app/core/interfaces/basket.interface.ts",
-        "hash": "8492727484689363077"
+        "hash": "1322249443069057050"
       },
       {
         "file": "src/app/core/interfaces/order.inteface.ts",
-        "hash": "7091988833428335261"
+        "hash": "15536045143971362429"
       },
       {
         "file": "src/app/core/interfaces/page.inteface.ts",
-        "hash": "501207252024742871"
+        "hash": "12349306580192965524"
       },
       {
         "file": "src/app/core/interfaces/product.inteface.ts",
-        "hash": "10187954863231372073"
+        "hash": "7193632367795680800"
       },
       {
         "file": "src/app/core/mocks/products.mock.ts",
-        "hash": "6501668678613380332"
+        "hash": "9801484090905739803"
       },
       {
         "file": "src/app/core/services/basket.service.ts",
@@ -190,23 +191,23 @@
       },
       {
         "file": "src/app/core/services/orders.service.ts",
-        "hash": "11436972113550251477"
+        "hash": "8041585207056369486"
       },
       {
         "file": "src/app/core/services/products.service.ts",
-        "hash": "14507616725219700316"
+        "hash": "17105273448632486385"
       },
       {
         "file": "src/app/core/services/users.service.ts",
-        "hash": "3810427366746652893"
+        "hash": "15135757833978648242"
       },
       {
         "file": "src/app/modules/cart/cart.component.html",
-        "hash": "8013493726658816240"
+        "hash": "2077851604063736418"
       },
       {
         "file": "src/app/modules/cart/cart.component.scss",
-        "hash": "3296787609104378759"
+        "hash": "13082121573975387329"
       },
       {
         "file": "src/app/modules/cart/cart.component.ts",
@@ -218,7 +219,7 @@
       },
       {
         "file": "src/app/modules/cart-item/cart-item.component.scss",
-        "hash": "5353606211382706893"
+        "hash": "1247071750625896817"
       },
       {
         "file": "src/app/modules/cart-item/cart-item.component.ts",
@@ -226,51 +227,51 @@
       },
       {
         "file": "src/app/modules/pagination/pagination.component.html",
-        "hash": "1321717642677435613"
+        "hash": "15450912854759063056"
       },
       {
         "file": "src/app/modules/pagination/pagination.component.scss",
-        "hash": "2999695851648846280"
+        "hash": "17254889365986182203"
       },
       {
         "file": "src/app/modules/pagination/pagination.component.ts",
-        "hash": "1796111043021753906"
+        "hash": "12955281900446022306"
       },
       {
         "file": "src/app/modules/product-admin-item/product-admin-item.component.html",
-        "hash": "2395400497028887514"
+        "hash": "4022729474079458553"
       },
       {
         "file": "src/app/modules/product-admin-item/product-admin-item.component.scss",
-        "hash": "17867275952806897064"
+        "hash": "17627063946488192786"
       },
       {
         "file": "src/app/modules/product-admin-item/product-admin-item.component.ts",
-        "hash": "1155462059281322216"
+        "hash": "5416414887351254880"
       },
       {
         "file": "src/app/modules/product-form/product-form.component.html",
-        "hash": "8950139161921612960"
+        "hash": "6835812109819634776"
       },
       {
         "file": "src/app/modules/product-form/product-form.component.scss",
-        "hash": "13222622305120700978"
+        "hash": "15933300295599576178"
       },
       {
         "file": "src/app/modules/product-form/product-form.component.ts",
-        "hash": "12779177712869791061"
+        "hash": "437488808129349050"
       },
       {
         "file": "src/app/modules/products/products.component.html",
-        "hash": "11734880032153123676"
+        "hash": "18182832097312643741"
       },
       {
         "file": "src/app/modules/products/products.component.scss",
-        "hash": "10817741391596458572"
+        "hash": "14529298057494763125"
       },
       {
         "file": "src/app/modules/products/products.component.ts",
-        "hash": "11555859636009716794"
+        "hash": "5434302505611566380"
       },
       {
         "file": "src/app/modules/products-item/products-item.component.html",
@@ -278,23 +279,35 @@
       },
       {
         "file": "src/app/modules/products-item/products-item.component.scss",
-        "hash": "17867275952806897064"
+        "hash": "17627063946488192786"
       },
       {
         "file": "src/app/modules/products-item/products-item.component.ts",
         "hash": "6900368000944104116"
       },
       {
+        "file": "src/app/pages/add-product-page/add-product-page.component.html",
+        "hash": "706654867666102668"
+      },
+      {
+        "file": "src/app/pages/add-product-page/add-product-page.component.scss",
+        "hash": "6318373203036360243"
+      },
+      {
+        "file": "src/app/pages/add-product-page/add-product-page.component.ts",
+        "hash": "7592806500835019601"
+      },
+      {
         "file": "src/app/pages/admin-page/admin-page.component.html",
-        "hash": "12690490895494629491"
+        "hash": "17338998455007951269"
       },
       {
         "file": "src/app/pages/admin-page/admin-page.component.scss",
-        "hash": "10817741391596458572"
+        "hash": "8852017307987652176"
       },
       {
         "file": "src/app/pages/admin-page/admin-page.component.ts",
-        "hash": "14835814108196463854"
+        "hash": "3941561688446335336"
       },
       {
         "file": "src/app/pages/cart-page/cart-page.component.html",
@@ -302,11 +315,23 @@
       },
       {
         "file": "src/app/pages/cart-page/cart-page.component.scss",
-        "hash": "19867258716380490"
+        "hash": "15803018101546862384"
       },
       {
         "file": "src/app/pages/cart-page/cart-page.component.ts",
         "hash": "13467064542933039988"
+      },
+      {
+        "file": "src/app/pages/edit-product-page/edit-product-page.component.html",
+        "hash": "17093775421868064260"
+      },
+      {
+        "file": "src/app/pages/edit-product-page/edit-product-page.component.scss",
+        "hash": "2825462055507508076"
+      },
+      {
+        "file": "src/app/pages/edit-product-page/edit-product-page.component.ts",
+        "hash": "1218653284474670927"
       },
       {
         "file": "src/app/pages/home-page/home-page.component.html",
@@ -314,7 +339,7 @@
       },
       {
         "file": "src/app/pages/home-page/home-page.component.scss",
-        "hash": "19867258716380490"
+        "hash": "15803018101546862384"
       },
       {
         "file": "src/app/pages/home-page/home-page.component.ts",
@@ -322,15 +347,15 @@
       },
       {
         "file": "src/app/pages/orders-page/orders-page.component.html",
-        "hash": "4974788652486950598"
+        "hash": "17279135657177860044"
       },
       {
         "file": "src/app/pages/orders-page/orders-page.component.scss",
-        "hash": "13027103444035360129"
+        "hash": "16587862945170759940"
       },
       {
         "file": "src/app/pages/orders-page/orders-page.component.ts",
-        "hash": "10981333097112932857"
+        "hash": "1635949361890719195"
       },
       {
         "file": "src/app/shared/pipes/price.pipe.ts",
@@ -374,11 +399,11 @@
       },
       {
         "file": "src/environments/environment.interface.ts",
-        "hash": "13270358972312312324"
+        "hash": "7182998778932443344"
       },
       {
         "file": "src/environments/environment.ts",
-        "hash": "9646697445780493368"
+        "hash": "12582172649215780762"
       },
       {
         "file": "src/favicon.ico",
@@ -386,43 +411,43 @@
       },
       {
         "file": "src/index.html",
-        "hash": "17745749129538492548"
+        "hash": "11711748436749194528"
       },
       {
         "file": "src/main.ts",
-        "hash": "15182413359601748817"
+        "hash": "386444481097164373"
       },
       {
         "file": "src/manifest.webmanifest",
-        "hash": "16386606039995778968"
+        "hash": "15926493827101366820"
       },
       {
         "file": "src/setup.jest.ts",
-        "hash": "4201286800637584538"
+        "hash": "5878623919738862874"
       },
       {
         "file": "src/styles/breakpoints.scss",
-        "hash": "14688767731158185898"
+        "hash": "8901619062852419734"
       },
       {
         "file": "src/styles/palette.scss",
-        "hash": "14159621488247308301"
+        "hash": "8490822729267593478"
       },
       {
         "file": "src/styles.scss",
-        "hash": "8675723166717694174"
+        "hash": "9241461422575894790"
       },
       {
         "file": "tsconfig.app.json",
-        "hash": "12139803600525906515"
+        "hash": "1322483135021572888"
       },
       {
         "file": "tsconfig.json",
-        "hash": "13302987518948273521"
+        "hash": "518639541025454545"
       },
       {
         "file": "tsconfig.spec.json",
-        "hash": "7805527937194301882"
+        "hash": "14701860812137490493"
       }
     ]
   }

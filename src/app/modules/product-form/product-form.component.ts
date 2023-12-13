@@ -40,12 +40,24 @@ export class ProductFormComponent {
   form = this._fb.group({
     name: ['', [Validators.required, Validators.minLength(5)]],
     price: [null as number, [Validators.required, Validators.min(0.5)]],
-    stockQuantity: [null as number, [Validators.required, Validators.min(1), Validators.max(1000)]],
+    stockQuantity: [1, [Validators.required, Validators.min(1), Validators.max(1000)]],
   });
 
   constructor(
     private _fb: FormBuilder,
   ) { }
+
+  getErrorMessage(controlName: string): string {
+    const control = this.form?.get(controlName);
+    return control?.hasError('required') ?
+      'Pole wymagane' :
+      control?.hasError('minlength') ?
+        'Minimalna długość 5 znaków' :
+        control?.hasError('min') ?
+          `Minimalna wartość ${control?.getError('min')?.min as number}` :
+          control?.hasError('max') ?
+            `Maksymalna wartość ${control?.getError('max')?.max as number}` : '';
+  }
 
   submit(): void {
     this.dsSubmitedValue.emit(this.form.value as Product);

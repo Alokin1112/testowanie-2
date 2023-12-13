@@ -10,10 +10,9 @@
       id="name-input"
       formControlName="name"
     />
-    <mat-error *ngIf="form.get('name').hasError('required')">
-      Nazwa jest wymagana
+    <mat-error>
+      {{ getErrorMessage('name') }}
     </mat-error>
-    <mat-error *ngIf="form.get('name').hasError('minlenght')">Nazwa musi mie minimum 5 znaków</mat-error>
   </mat-form-field>
 
 
@@ -27,7 +26,9 @@
       formControlName="stockQuantity"
       type="number"
     />
-    <mat-error *ngIf="form.get('stockQuantity').hasError('required')">Liczba na magazynie jest wymagana</mat-error>
+    <mat-error>
+      {{ getErrorMessage('stockQuantity') }}
+    </mat-error>
   </mat-form-field>
 
   <mat-form-field appearance="outline">
@@ -38,7 +39,9 @@
       formControlName="price"
       type="number"
     />
-    <mat-error *ngIf="form.get('price').hasError('required')">Cena jest wymagana</mat-error>
+    <mat-error>
+      {{ getErrorMessage('price') }}
+    </mat-error>
   </mat-form-field>
 
   <button

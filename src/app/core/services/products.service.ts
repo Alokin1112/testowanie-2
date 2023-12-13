@@ -20,7 +20,7 @@ export class ProductsService {
   getAll(): Observable<Page<Product[]>> {
     return this.pagination$.asObservable().pipe(
       switchMap((pagination) => {
-        const params = new HttpParams({ fromObject: pagination as unknown as Record<string, number> });
+        const params = new HttpParams({ fromObject: pagination as unknown as Record<string, number> }).append("sort", "id,desc");
         return this.http.get<Page<Product[]>>(`${environment.httpBackend}${API.PRODUCTS}`, { params });
       })
     )
