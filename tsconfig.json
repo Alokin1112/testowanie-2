@@ -11,7 +11,7 @@
     "strictNullChecks": false,
     "esModuleInterop": true,
     "noFallthroughCasesInSwitch": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
@@ -23,6 +23,10 @@
     "lib": [
       "ES2022",
       "dom"
+    ],
+    "types": [
+      "cypress",
+      "node"
     ],
     "paths": {
       "@assets/*": [
