@@ -91,19 +91,19 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "8486006186182370896"
+        "hash": "11401536628550306450"
       },
       {
         "file": ".nx/cache/lockfile.hash",
-        "hash": "12842225803930612459"
+        "hash": "18414447894581795214"
       },
       {
         "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "16853618532397992087"
+        "hash": "13344053522699903949"
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "15195054426900464165"
+        "hash": "14486656467876235263"
       },
       {
         "file": ".vscode/extensions.json",
@@ -155,7 +155,7 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "16156984543192187031"
+        "hash": "17547696721958350581"
       },
       {
         "file": "src/app/app.routing.ts",
@@ -167,7 +167,7 @@
       },
       {
         "file": "src/app/core/interfaces/basket.interface.ts",
-        "hash": "1322249443069057050"
+        "hash": "12363238534052434416"
       },
       {
         "file": "src/app/core/interfaces/order.inteface.ts",
@@ -187,15 +187,15 @@
       },
       {
         "file": "src/app/core/services/basket.service.ts",
-        "hash": "4259258588012579462"
+        "hash": "16082711049671142220"
       },
       {
         "file": "src/app/core/services/orders.service.ts",
-        "hash": "8041585207056369486"
+        "hash": "10356976616505981299"
       },
       {
         "file": "src/app/core/services/products.service.ts",
-        "hash": "17105273448632486385"
+        "hash": "6565876686767295794"
       },
       {
         "file": "src/app/core/services/users.service.ts",
@@ -203,7 +203,7 @@
       },
       {
         "file": "src/app/modules/cart/cart.component.html",
-        "hash": "2077851604063736418"
+        "hash": "652799922519595321"
       },
       {
         "file": "src/app/modules/cart/cart.component.scss",
@@ -211,19 +211,19 @@
       },
       {
         "file": "src/app/modules/cart/cart.component.ts",
-        "hash": "18064884971829929906"
+        "hash": "6679136918355467849"
       },
       {
         "file": "src/app/modules/cart-item/cart-item.component.html",
-        "hash": "2329205211124100642"
+        "hash": "3411829285842287132"
       },
       {
         "file": "src/app/modules/cart-item/cart-item.component.scss",
-        "hash": "1247071750625896817"
+        "hash": "14082089022431445066"
       },
       {
         "file": "src/app/modules/cart-item/cart-item.component.ts",
-        "hash": "10979556319846354464"
+        "hash": "12512366452657113148"
       },
       {
         "file": "src/app/modules/pagination/pagination.component.html",
@@ -251,7 +251,7 @@
       },
       {
         "file": "src/app/modules/product-form/product-form.component.html",
-        "hash": "6835812109819634776"
+        "hash": "17523753740737044913"
       },
       {
         "file": "src/app/modules/product-form/product-form.component.scss",
@@ -259,7 +259,7 @@
       },
       {
         "file": "src/app/modules/product-form/product-form.component.ts",
-        "hash": "437488808129349050"
+        "hash": "840014435869010336"
       },
       {
         "file": "src/app/modules/products/products.component.html",
@@ -275,7 +275,7 @@
       },
       {
         "file": "src/app/modules/products-item/products-item.component.html",
-        "hash": "16132002210927019059"
+        "hash": "18167241284827007789"
       },
       {
         "file": "src/app/modules/products-item/products-item.component.scss",
@@ -283,7 +283,7 @@
       },
       {
         "file": "src/app/modules/products-item/products-item.component.ts",
-        "hash": "6900368000944104116"
+        "hash": "14891390925157975571"
       },
       {
         "file": "src/app/pages/add-product-page/add-product-page.component.html",

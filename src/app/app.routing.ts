@@ -1,5 +1,5 @@
 import { Routes } from "@angular/router";
-import { AppComponent } from "@app/app.component";
+import { OrdersComponent } from "@pages/orders/orders.component";
 import { AddProductPageComponent } from "@pages/add-product-page/add-product-page.component";
 import { AdminPageComponent } from "@pages/admin-page/admin-page.component";
 import { CartPageComponent } from "@pages/cart-page/cart-page.component";
@@ -31,6 +31,10 @@ export default [
   {
     path: 'admin/editProduct/:id',
     component: EditProductPageComponent
+  },
+  {
+    path: 'admin/orders',
+    component: OrdersComponent
   }
 
 ] as Routes;

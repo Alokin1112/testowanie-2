@@ -24,7 +24,6 @@ export class ProductsService {
         return this.http.get<Page<Product[]>>(`${environment.httpBackend}${API.PRODUCTS}`, { params });
       })
     )
-
   }
 
   getById(id: number): Observable<Product> {

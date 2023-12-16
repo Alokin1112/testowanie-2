@@ -1,0 +1,26 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{dsOrder?.orderStatus}} -- {{ dsOrder?.orderDate |date }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <ul class="list">
+      @for (detail of dsOrder?.orderDetails; track $index) {
+      <li class="list__item">
+        <div>
+          {{ detail?.product?.name }}
+        </div>
+        <div>
+          <b>{{detail.quantity}}</b> X <b>{{detail?.product?.price |price}} zł</b> = <b>{{
+            detail?.price
+            |
+            price }} zł</b>
+        </div>
+      </li>
+      }
+    </ul>
+    <hr class="hr">
+    <div class="totalPrice">
+      {{ totalPrice | price}} zł
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,19 @@
+@if(orders$ | async; as orders){
+<div class="wrapper">
+  @for (order of orders?.content; track order?.id) {
+  <ds-order-item [dsOrder]="order" />
+  }@empty {
+  <p>No Data</p>
+  }
+  <ds-pagination
+    [pagination]="pagination$ | async"
+    [maxPageCount]="orders?.totalPages"
+    (nextPage)="nextPage()"
+    (previousPage)="previousPage()"
+  />
+</div>
+}@else {
+<div class="centered">
+  <mat-spinner />
+</div>
+}
