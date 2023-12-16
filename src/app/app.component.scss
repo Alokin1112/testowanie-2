@@ -53,6 +53,11 @@
 }
 
 .title {
+  margin-left: 6px;
   text-decoration: none;
   color: white;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

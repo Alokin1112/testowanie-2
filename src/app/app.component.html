@@ -6,6 +6,17 @@
     class="title"
     routerLink="/"
   >My App - testowanie</a>
+
+  <a
+    class="title"
+    routerLink="/admin"
+  >Admin</a>
+
+  <a
+    class="title"
+    routerLink="/admin/orders"
+  >Zamówienia</a>
+
   <span class="example-spacer"></span>
   @if ({amount:basketItemsAmount$ | async}; as props) {
   <a

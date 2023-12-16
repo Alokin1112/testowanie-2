@@ -1,11 +1,10 @@
 import { Routes } from "@angular/router";
-import { OrdersComponent } from "@pages/orders/orders.component";
 import { AddProductPageComponent } from "@pages/add-product-page/add-product-page.component";
 import { AdminPageComponent } from "@pages/admin-page/admin-page.component";
 import { CartPageComponent } from "@pages/cart-page/cart-page.component";
 import { EditProductPageComponent } from "@pages/edit-product-page/edit-product-page.component";
 import { HomePageComponent } from "@pages/home-page/home-page.component";
-import { OrdersPageComponent } from "@pages/orders-page/orders-page.component";
+import { OrdersComponent } from "@pages/orders/orders.component";
 
 export default [
   {
@@ -15,10 +14,6 @@ export default [
   {
     path: 'cart',
     component: CartPageComponent
-  },
-  {
-    path: 'orders',
-    component: OrdersPageComponent,
   },
   {
     path: 'admin',
