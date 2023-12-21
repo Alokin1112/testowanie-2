@@ -1,6 +1,6 @@
 <mat-card class="card">
   <mat-card-header>
-    <mat-card-title>{{ product?.name }}</mat-card-title>
+    <mat-card-title class="product__title">{{ product?.name }}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <div class="price">
@@ -16,6 +16,7 @@
         [formControl]="amountInput"
       />
       <button
+        class="add__button"
         mat-stroked-button
         [disabled]="amountInput.invalid || (amountInput?.value + (itemCountInBasket$ | async))>product.stockQuantity"
         (click)="addItem()"

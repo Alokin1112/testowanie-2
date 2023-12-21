@@ -8,6 +8,8 @@
   <ds-pagination
     [pagination]="pagination$ | async"
     [maxPageCount]="orders?.totalPages"
+    class="order__pagination"
+    [id]="orders?.totalElements"
     (nextPage)="nextPage()"
     (previousPage)="previousPage()"
   />
