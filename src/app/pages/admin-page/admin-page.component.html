@@ -20,6 +20,8 @@
   <p>No Data</p>
   }
   <ds-pagination
+    class="product__pagination"
+    [id]="products?.totalElements"
     [pagination]="pagination$ | async"
     [maxPageCount]="products?.totalPages"
     (nextPage)="nextPage()"

@@ -1,6 +1,6 @@
 describe('template spec', () => {
   it('should have links', () => {
-    cy.visit('http://localhost:4200')
+    cy.visit('http://localhost:4200');
 
     // Use the 'get' command to locate the element by its ID
     cy.get('#home-link')
@@ -11,5 +11,5 @@ describe('template spec', () => {
 
     cy.get('#orders-link')
       .should('exist'); // Assert that the element exists
-  })
-})
+  });
+});

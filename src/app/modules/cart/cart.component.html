@@ -1,6 +1,7 @@
 @if(basketItems$ | async; as basketItems){
 
 <button
+  id="create-order"
   mat-raised-button
   color="primary"
   (click)="addOrder(basketItems)"
@@ -17,12 +18,13 @@
 
 @for (basketItem of basketItems; track $index) {
 <ds-cart-item
+  id="cart-product"
   [dsBasketItem]="basketItem"
   (dsDeleteItem)="deleteItem(basketItem?.product?.id)"
 />
 
 }@empty {
-<p>No Data</p>
+<p id="no-products-in-cart">No Data</p>
 }
 }@else {
 <div class="centered">

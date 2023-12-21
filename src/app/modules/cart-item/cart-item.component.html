@@ -2,6 +2,7 @@
   <mat-card-header class="header">
     <mat-card-title>{{ dsBasketItem?.product?.name }}</mat-card-title>
     <button
+      id="delete-from-cart"
       mat-icon-button
       (click)="dsDeleteItem.emit(null)"
     >
