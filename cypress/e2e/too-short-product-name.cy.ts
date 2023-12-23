@@ -1,5 +1,5 @@
-describe('add new product test', () => {
-  it('should add new product', () => {
+describe('add new product with too short name test', () => {
+  it('should disable adding new product when name provided is too short', () => {
     cy.visit('http://localhost:4200');
 
     cy.get('#admin-link').click();
