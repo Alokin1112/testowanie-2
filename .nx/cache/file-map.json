@@ -91,7 +91,7 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "11401536628550306450"
+        "hash": "15607832006918705059"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -103,7 +103,7 @@
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "14486656467876235263"
+        "hash": "15842099578620237801"
       },
       {
         "file": ".vscode/extensions.json",
@@ -130,6 +130,26 @@
         "hash": "13436080871257951880"
       },
       {
+        "file": "cypress/e2e/order.cy.ts",
+        "hash": "6054641419746594015"
+      },
+      {
+        "file": "cypress/fixtures/example.json",
+        "hash": "11823815388699691065"
+      },
+      {
+        "file": "cypress/support/commands.ts",
+        "hash": "9883532909609567882"
+      },
+      {
+        "file": "cypress/support/e2e.ts",
+        "hash": "9400169756472368457"
+      },
+      {
+        "file": "cypress.config.ts",
+        "hash": "811927706746223270"
+      },
+      {
         "file": "jest.config.ts",
         "hash": "4271373349861349343"
       },
@@ -147,11 +167,11 @@
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "18247036500764521115"
+        "hash": "412633906059907267"
       },
       {
         "file": "src/app/app.component.scss",
-        "hash": "17610046755516762648"
+        "hash": "8607175745573180120"
       },
       {
         "file": "src/app/app.component.ts",
@@ -159,7 +179,7 @@
       },
       {
         "file": "src/app/app.routing.ts",
-        "hash": "9326463430416392260"
+        "hash": "14559274747886441055"
       },
       {
         "file": "src/app/core/constants/api.const.ts",
@@ -191,11 +211,11 @@
       },
       {
         "file": "src/app/core/services/orders.service.ts",
-        "hash": "10356976616505981299"
+        "hash": "11364760912378544781"
       },
       {
         "file": "src/app/core/services/products.service.ts",
-        "hash": "6565876686767295794"
+        "hash": "808609514669898361"
       },
       {
         "file": "src/app/core/services/users.service.ts",
@@ -224,6 +244,18 @@
       {
         "file": "src/app/modules/cart-item/cart-item.component.ts",
         "hash": "12512366452657113148"
+      },
+      {
+        "file": "src/app/modules/order-item/order-item.component.html",
+        "hash": "16355570354687724478"
+      },
+      {
+        "file": "src/app/modules/order-item/order-item.component.scss",
+        "hash": "13670141117949973388"
+      },
+      {
+        "file": "src/app/modules/order-item/order-item.component.ts",
+        "hash": "11496992335837921244"
       },
       {
         "file": "src/app/modules/pagination/pagination.component.html",
@@ -346,16 +378,16 @@
         "hash": "2044035848290583916"
       },
       {
-        "file": "src/app/pages/orders-page/orders-page.component.html",
-        "hash": "17279135657177860044"
+        "file": "src/app/pages/orders/orders.component.html",
+        "hash": "2103283043644433646"
       },
       {
-        "file": "src/app/pages/orders-page/orders-page.component.scss",
-        "hash": "16587862945170759940"
+        "file": "src/app/pages/orders/orders.component.scss",
+        "hash": "10817741391596458572"
       },
       {
-        "file": "src/app/pages/orders-page/orders-page.component.ts",
-        "hash": "1635949361890719195"
+        "file": "src/app/pages/orders/orders.component.ts",
+        "hash": "5558380264681101214"
       },
       {
         "file": "src/app/shared/pipes/price.pipe.ts",
@@ -443,7 +475,7 @@
       },
       {
         "file": "tsconfig.json",
-        "hash": "518639541025454545"
+        "hash": "5753808136251900272"
       },
       {
         "file": "tsconfig.spec.json",

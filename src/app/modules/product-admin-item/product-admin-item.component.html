@@ -1,6 +1,6 @@
 <mat-card class="card">
   <mat-card-header>
-    <mat-card-title>{{ dsProduct?.name }}</mat-card-title>
+    <mat-card-title class="header__product__admin__item">{{ dsProduct?.name }}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <div class="price">
@@ -13,6 +13,7 @@
   <mat-card-actions align="end">
     <span class="actions">
       <a
+        class="product__admin__item__edit"
         mat-stroked-button
         [routerLink]="'/admin/editProduct/' + dsProduct?.id"
       >

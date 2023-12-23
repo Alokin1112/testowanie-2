@@ -1,6 +1,6 @@
 <mat-card class="card">
   <mat-card-header class="header">
-    <mat-card-title>{{ dsBasketItem?.product?.name }}</mat-card-title>
+    <mat-card-title class="cart__item__header">{{ dsBasketItem?.product?.name }}</mat-card-title>
     <button
       id="delete-from-cart"
       mat-icon-button
@@ -13,7 +13,7 @@
   </mat-card-header>
   <mat-card-actions align="end">
 
-    <div class="price">
+    <div class="cart__item__price">
       {{ dsBasketItem?.product.price | price }} zł
     </div>
 
@@ -21,7 +21,7 @@
       X
     </span>
 
-    <span class="price">
+    <span class="price quantity">
       {{ dsBasketItem.quantity }}
     </span>
 

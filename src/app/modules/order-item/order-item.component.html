@@ -6,11 +6,12 @@
     <ul class="list">
       @for (detail of dsOrder?.orderDetails; track $index) {
       <li class="list__item">
-        <div>
+        <div class="order__item__name">
           {{ detail?.product?.name }}
         </div>
         <div>
-          <b>{{detail.quantity}}</b> X <b>{{detail?.product?.price |price}} zł</b> = <b>{{
+          <b>{{detail.quantity}}</b> X <b class="order__item__price">{{(detail?.price/detail.quantity) |price}} zł</b> =
+          <b>{{
             detail?.price
             |
             price }} zł</b>

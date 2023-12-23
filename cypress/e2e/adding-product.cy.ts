@@ -32,6 +32,8 @@ describe('add new product test', () => {
 
             expect(updatedPaginationIdAsInt).to.eq(initialPaginationIdAsInt + 1);
           });
+        cy.get('#admin-link').click();
+        cy.get('.delete-admin-item-button').first().click();
       });
   });
 });

@@ -6,6 +6,6 @@ describe('add items to cart and check items count test', () => {
     cy.get('.add__button').first().click();
     cy.get('.add__button').first().click();
 
-    cy.get('.items__count').should('have.text', ' 3 ');
+    cy.get('.cart__items__count').should('have.text', ' 3 ');
   });
 });
