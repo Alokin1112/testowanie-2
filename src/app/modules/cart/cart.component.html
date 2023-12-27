@@ -4,6 +4,7 @@
   id="create-order"
   mat-raised-button
   color="primary"
+  [disabled]="!basketItems?.length"
   (click)="addOrder(basketItems)"
 >
   <span class="buy__button">

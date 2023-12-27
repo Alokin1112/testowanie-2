@@ -1,11 +1,7 @@
 <mat-card class="card">
   <mat-card-header class="header">
     <mat-card-title class="cart__item__header">{{ dsBasketItem?.product?.name }}</mat-card-title>
-    <button
-      id="delete-from-cart"
-      mat-icon-button
-      (click)="dsDeleteItem.emit(null)"
-    >
+    <button id="delete-from-cart" mat-icon-button (click)="dsDeleteItem.emit(null)">
       <mat-icon>
         close
       </mat-icon>
@@ -24,8 +20,9 @@
     <span class="price quantity">
       {{ dsBasketItem.quantity }}
     </span>
-
-    =
-    {{ (dsBasketItem?.quantity*dsBasketItem?.product.price) | price }} zł
+    <span id="total-price">
+      =
+      {{ (dsBasketItem?.quantity*dsBasketItem?.product.price) | price }} zł
+    </span>
   </mat-card-actions>
 </mat-card>
