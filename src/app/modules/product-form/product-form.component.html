@@ -26,7 +26,7 @@
       formControlName="stockQuantity"
       type="number"
     />
-    <mat-error>
+    <mat-error id="wrong-quantity">
       {{ getErrorMessage('stockQuantity') }}
     </mat-error>
   </mat-form-field>
@@ -39,7 +39,7 @@
       formControlName="price"
       type="number"
     />
-    <mat-error>
+    <mat-error id="wrong-price">
       {{ getErrorMessage('price') }}
     </mat-error>
   </mat-form-field>
