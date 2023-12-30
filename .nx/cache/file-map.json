@@ -91,7 +91,7 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "15607832006918705059"
+        "hash": "13281484286937233302"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -103,7 +103,7 @@
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "15842099578620237801"
+        "hash": "17652982825148589633"
       },
       {
         "file": ".vscode/extensions.json",
@@ -130,8 +130,48 @@
         "hash": "13436080871257951880"
       },
       {
-        "file": "cypress/e2e/order.cy.ts",
-        "hash": "6054641419746594015"
+        "file": "cypress/e2e/adding-many-items-to-cart.cy.ts",
+        "hash": "12182531622112218240"
+      },
+      {
+        "file": "cypress/e2e/adding-more-items-than-quantity.cy.ts",
+        "hash": "8545331486970399252"
+      },
+      {
+        "file": "cypress/e2e/adding-order.cy.ts",
+        "hash": "15798784161455587730"
+      },
+      {
+        "file": "cypress/e2e/adding-product.cy.ts",
+        "hash": "7665504301097998649"
+      },
+      {
+        "file": "cypress/e2e/adding-to-cart.cy.ts",
+        "hash": "8497117297864617529"
+      },
+      {
+        "file": "cypress/e2e/check-items-count.cy.ts",
+        "hash": "15700257840856845016"
+      },
+      {
+        "file": "cypress/e2e/delete-product.cy.ts",
+        "hash": "6109277641747866505"
+      },
+      {
+        "file": "cypress/e2e/deleting-from-cart.cy.ts",
+        "hash": "9401355912422433485"
+      },
+      {
+        "file": "cypress/e2e/editing-product-item.cy.ts",
+        "hash": "13939225920239049512"
+      },
+      {
+        "file": "cypress/e2e/previous-page-disabled.cy.ts",
+        "hash": "3426600182515571420"
+      },
+      {
+        "file": "cypress/e2e/too-short-product-name.cy.ts",
+        "hash": "8174134536027028741"
       },
       {
         "file": "cypress/fixtures/example.json",
@@ -163,15 +203,15 @@
       },
       {
         "file": "package.json",
-        "hash": "1914823324341344057"
+        "hash": "14969482872363784624"
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "412633906059907267"
+        "hash": "13880064122770979100"
       },
       {
         "file": "src/app/app.component.scss",
-        "hash": "8607175745573180120"
+        "hash": "9102524573207111510"
       },
       {
         "file": "src/app/app.component.ts",
@@ -223,7 +263,7 @@
       },
       {
         "file": "src/app/modules/cart/cart.component.html",
-        "hash": "652799922519595321"
+        "hash": "4337247793070120425"
       },
       {
         "file": "src/app/modules/cart/cart.component.scss",
@@ -235,11 +275,11 @@
       },
       {
         "file": "src/app/modules/cart-item/cart-item.component.html",
-        "hash": "3411829285842287132"
+        "hash": "2863789266453709581"
       },
       {
         "file": "src/app/modules/cart-item/cart-item.component.scss",
-        "hash": "14082089022431445066"
+        "hash": "7193753964893960956"
       },
       {
         "file": "src/app/modules/cart-item/cart-item.component.ts",
@@ -247,7 +287,7 @@
       },
       {
         "file": "src/app/modules/order-item/order-item.component.html",
-        "hash": "16355570354687724478"
+        "hash": "12937269587866196534"
       },
       {
         "file": "src/app/modules/order-item/order-item.component.scss",
@@ -259,7 +299,7 @@
       },
       {
         "file": "src/app/modules/pagination/pagination.component.html",
-        "hash": "15450912854759063056"
+        "hash": "11612575966168047010"
       },
       {
         "file": "src/app/modules/pagination/pagination.component.scss",
@@ -271,7 +311,7 @@
       },
       {
         "file": "src/app/modules/product-admin-item/product-admin-item.component.html",
-        "hash": "4022729474079458553"
+        "hash": "10989502751387333347"
       },
       {
         "file": "src/app/modules/product-admin-item/product-admin-item.component.scss",
@@ -283,7 +323,7 @@
       },
       {
         "file": "src/app/modules/product-form/product-form.component.html",
-        "hash": "17523753740737044913"
+        "hash": "7587237384767500637"
       },
       {
         "file": "src/app/modules/product-form/product-form.component.scss",
@@ -295,7 +335,7 @@
       },
       {
         "file": "src/app/modules/products/products.component.html",
-        "hash": "18182832097312643741"
+        "hash": "486302629499096705"
       },
       {
         "file": "src/app/modules/products/products.component.scss",
@@ -307,7 +347,7 @@
       },
       {
         "file": "src/app/modules/products-item/products-item.component.html",
-        "hash": "18167241284827007789"
+        "hash": "4366986215050334349"
       },
       {
         "file": "src/app/modules/products-item/products-item.component.scss",
@@ -331,7 +371,7 @@
       },
       {
         "file": "src/app/pages/admin-page/admin-page.component.html",
-        "hash": "17338998455007951269"
+        "hash": "2471131233002341576"
       },
       {
         "file": "src/app/pages/admin-page/admin-page.component.scss",
@@ -379,7 +419,7 @@
       },
       {
         "file": "src/app/pages/orders/orders.component.html",
-        "hash": "2103283043644433646"
+        "hash": "11427005834335247182"
       },
       {
         "file": "src/app/pages/orders/orders.component.scss",
